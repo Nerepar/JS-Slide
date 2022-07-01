@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
 }
 
@@ -27,13 +27,12 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-
 }
 
 .full-size {
     width: 100%;
     height: 100%;
-}
+} 
 
 .Slider-controlPanel__wrapper {
     position: absolute;
@@ -48,7 +47,7 @@ body {
     padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    box-shadow: 0px 0px 14px gray;
+    box-shadow: 0 0 14px grey;
 }
 
 .Slider-controlPanel__button {
@@ -56,7 +55,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    transition: 0.5s;
+    transition: 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,5 +74,28 @@ body {
     height: 14px;
     background: aliceblue;
     border-radius: 50%;
-
 }
+
+.Slider-button__back, .Slider-button__next {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.Slider-button__next:hover, .Slider-button__back:hover {
+    color: grey;
+}
+
+.Slider-button__next {
+    right: 10px;
+}
+
+.Slider-button__back {
+    left: 10px;
+}
+
+
